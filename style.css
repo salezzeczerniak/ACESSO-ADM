@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #01B0F1;
+    --color2: #fff;
+    --color3:#00101F;
+    --font1: 'Montserrat', sans-serif;
+}
+
+.tudo{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-image: url(../ACESSO-ADM/imgs/bg.png);
+}
+
+.lado_esquerdo{
+    background-color: rgb(0, 0,0,0.5);
+    width: 50%;
+    height: 100vh;
+}
+
+.banner_adm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 0 80px 80px 0;
+    background-color: var(--color1);
+    width: 800px;
+    color: var(--color2);
+    font-size: 40px;
+    font-family: var(--font1);
+}
+
+.descrição_texto{
+    font-size: 40px;
+    color: #fff;
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 80px;
+    font-family: var(--font1);
+}
+
+.banner_adm img{
+    width: 120px;
+}
+
+.login, .botao{
+    color: var(--color2);
+    font-size: 40px;
+    margin-right: 250px;
+    margin-top: 120px;
+}
+
+.acesso {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100px;
+    margin-top: 150px;
+}
+
+
+.acesso input{
+    border-radius: 50px;
+    border-color: var(--color2);
+    padding: 20px;
+    background-color: black;
+    color: var(--color2);
+}
+.input, label{
+    padding: 5%;
+}
+
+.botao{
+    background-color: var(--color1);
+    font-size: 25px;
+    text-align: center;
+    color: var(--color3);
+    margin-top: 50px;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 50px;
+}
