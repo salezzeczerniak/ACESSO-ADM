@@ -15,7 +15,9 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
-    background-image: url(img/bg\ \(2\).png);
+    width: 100%;
+    background-image: url(img/bg\ \(2\).png); 
+    font-family: var(--font1);
 }
 
 .lado_esquerdo {
@@ -46,11 +48,30 @@
     font-family: var(--font1);
 }
 
-.banner_adm img {
-    width: 120px;
+.text {
+    display: flex;
+    height: 30%;
+    align-items: end;
 }
 
-.login, .botao {
+.text span{
+    color: var(--color2);
+    text-align: end;
+    margin: 0 5% 0 50%;
+}
+.banner_adm img {
+    width: 110px;
+    margin-left: 50px;
+}
+
+.lado_direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+.login {
     color: var(--color2);
     font-size: 30px;
     margin-right: 250px;
@@ -62,24 +83,28 @@
     flex-direction: column;
     align-items: center;
     width: 250px;
-    height: 100px;
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 input::placeholder{
     color: var(--color2);
+    font-size: 18px;
+    font-family: var(--font1);
 }
 
 .acesso input {
-    border-radius: 50px;
+    border-radius: 35px;
+    height: 70px;   
     border-color: var(--color2);
-    padding: 20px;
-    background-color: black;
+    padding: 15px;
     color: var(--color2);
+    width: 300px;
+    margin-top: 25px;
+    background: linear-gradient(94.31deg, rgba(255, 255, 255, 0.25) -8.53%, rgba(0, 61, 115, 0.25) 116.35%);
 }
 
-.input, label{
-    padding: 5%;
+.teste_botao input{
+    height: 70px;
 }
 
 .botao {    
@@ -88,16 +113,18 @@ input::placeholder{
     color: var(--color3);
     margin-top: 50px;
     text-decoration: none;
-    width: 150px;
+    width: 200px;
     border-radius: 42px;
     padding: 12px;
     margin: 40px;
+    font-family: var(--font1);
     background: linear-gradient(94.31deg, #01B0F1 -8.53%, #35BDF5 38.95%, #B1DBFF 116.35%);
 }
 
 .seta_footer img {
     width: 40px;
 }
+
 .seta_footer {
     overflow: hidden;
     display: flex;
@@ -106,8 +133,15 @@ input::placeholder{
     background-color: #03293b80; 
     width: 100%;
     height: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 .seta_footer:hover {
     background-color:var(--color3);
+}
+
+.text {
+    color: var(--color2) 50%;
+
 }
